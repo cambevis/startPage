@@ -1,0 +1,61 @@
+html, body, .grid-container { height: 100%; margin: 2px;  }
+.grid-area{background-color: lightsteelblue;}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "FirstColumn SecondColumn ThirdColumn FourthColumn";
+}
+.feedItem{border: 1px solid #000000; is-size-1}
+.FirstColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Hackaday" "Wired";
+  grid-area: FirstColumn;
+}
+
+.Hackaday { grid-area: Hackaday;  }
+
+.Wired { grid-area: Wired; }
+
+.SecondColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "HackerNews" "SciAm";
+  grid-area: SecondColumn;
+}
+
+.HackerNews { grid-area: HackerNews; }
+
+.SciAm { grid-area: SciAm; }
+
+.ThirdColumn {
+  display: grid;
+  grid-template-columns:1fr ;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Weather";
+  grid-area: ThirdColumn;
+}
+
+.Weather { grid-area: Weather; }
+
+.FourthColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "SlickDeals" "Engadget";
+  grid-area: FourthColumn;
+}
+
+.SlickDeals { grid-area: SlickDeals; }
+
+.Engadget { grid-area: Engadget; }
+
+
