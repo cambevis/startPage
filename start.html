@@ -5,20 +5,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.min.js"></script>
     <script src="js/startPage.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/startPage.css">
+    <!--<link rel="stylesheet" href="css/startPage.css">-->
+    <style>
+        .feedItem {
+            border: 1px solid #000000;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="FirstColumn is-size-7">
+    <div class="grid-container columns">
+        <div class="FirstColumn is-size-7 column">
             <div class="Hackaday feedItem " id="Hackaday">
-                <h2>Hackaday</h2>
+                <p has-text-weight-semibold>Hackaday</p>
             </div>
-            <div class="Wired" id="Wired">
+            <div class="Wired feedItem" id="Wired">
                 <p>Wired</p>
             </div>
         </div>
-        <div class="SecondColumn">
+        <div class="SecondColumn is-size-7  column">
             <div class="HackerNews feedItem" id="HackerNews">
                 <p>Hacker News</p>
             </div>
@@ -26,12 +31,12 @@
                 <p>Scientific American</p>
             </div>
         </div>
-        <div class="ThirdColumn">
+        <div class="ThirdColumn is-size-7 column">
             <div class="Weather feedItem" id="Weather">
                 <p>Weather</p>
             </div>
         </div>
-        <div class="FourthColumn">
+        <div class="FourthColumn is-size-7 column">
             <div class="SlickDeals feedItem" id="SlickDeals">
                 <p>Slick Deals</p>
             </div>
