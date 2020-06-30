@@ -31,6 +31,11 @@ let feeds = [
         "name": "Weather",
         "url": "http://www.rssweather.com/zipcode/77410/rss.php"
     }
+    ,
+    {
+        "name": "WeatherCL",
+        "url": "http://www.rssweather.com/zipcode/77058/rss.php"
+    }
 
 ];
 feeds.forEach(feedItem => {
@@ -50,8 +55,6 @@ feeds.forEach(feedItem => {
             else {
                 mydiv.insertAdjacentHTML('beforeend', '<p>' + entry.content + '</p');
             }
-
-
         })
     })
 }

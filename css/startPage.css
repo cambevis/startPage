@@ -1,4 +1,4 @@
-html, body, .grid-container { height: 100%; margin: 2px;  }
+html, body, .grid-container { height: 100%; margin: 2px; background-color: rgb(183, 205, 233); }
 .grid-area{background-color: lightsteelblue;}
 .grid-container {
   display: grid;
@@ -6,8 +6,9 @@ html, body, .grid-container { height: 100%; margin: 2px;  }
   grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas: "FirstColumn SecondColumn ThirdColumn FourthColumn";
+  margin: 3px;
 }
-.feedItem{border: 1px solid #000000; is-size-1}
+
 .FirstColumn {
   display: grid;
   grid-template-columns: 1fr;
